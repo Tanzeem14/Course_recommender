@@ -9,7 +9,7 @@ st.write("AI-powered search using your Udemy dataset.")
 # Load Udemy courses
 @st.cache_data
 def load_data():
-    return load_udemy("D:/course_recommendation/udemy_courses.csv")
+    return load_udemy("udemy_courses.csv")
 
 df = load_data()
 recommender = CourseRecommender(df)
